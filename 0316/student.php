@@ -18,12 +18,9 @@ if (($_SESSION['user_type'] !='student' && $_SESSION['user_type'] !='teacher')) 
     ?>
 
 學生網頁
-
-
-
 <?php
 header("Location=logout.php");
-session_destroy();
+
 ?>
 <a href="logout.php">登出</a>
 </body>
